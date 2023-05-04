@@ -1,0 +1,42 @@
+/* css in our project for books */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* border box to fit height and width to all*/
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f1f5f8;
+  color: #222;
+}
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;  /* grid is like cards system */
+  gap: 2rem;  /* to fit like paddinf between grids of pictures */
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(2, 1fr); /* 2 li ryb9aw ibanu f ecran kbera */
+  }
+}
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+.book h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
